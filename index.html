@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menurific</title>
+  <link href="menurific.min.css" type="text/CSS" rel="stylesheet" />
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.menurific.min.js"></script>
+  <script>
+    (function($) {
+        $(document).ready(function() {
+            $('#main-nav').menurific({
+              hideDefaultMenu: true,
+              addHomeLink: false,
+              theme: 'dark',
+              direction: 'left',
+              headerLogo: 'logo.png'
+            });
+        });
+    })(jQuery);
+  </script>
+  <style>
+    #bottom-nav {
+      margin-top:200%;
+      width:100%;
+      height:100px;
+      background:black;
+    }
+  </style>
+</head>
+<body>
+  <div id="main-nav">
+    <ul>
+      <li><a href="#">Menu 1</a></li>
+      <li><a href="#">Menu 2</a></li>
+      </ul>
+  </div>
+
+</body>
+</html>
